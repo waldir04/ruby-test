@@ -1,0 +1,7 @@
+es:
+  statistics:
+    title: "Estadisticas"
+    table:
+      title:
+        character: "Personaje"
+        lines: "Número de lineas"

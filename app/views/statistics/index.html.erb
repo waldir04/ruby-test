@@ -1,0 +1,22 @@
+<% content_for :head do %>
+  <title><%= t('app.name') %>::<%= t('pages.statistics') %></title>
+<% end %>
+
+<h1><%= t('statistics.title') %></h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col"><%= t('statistics.table.title.character') %></th>
+      <th scope="col"><%= t('statistics.table.title.lines') %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @characters_with_number_lines.each do |character, lines| %>
+      <tr>
+        <td><%= title(character) %></td>
+        <td><%= lines %></td>
+      </tr>
+    <% end -%>
+  </tbody>
+</table>
